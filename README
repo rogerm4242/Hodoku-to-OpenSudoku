@@ -1,0 +1,35 @@
+Generate puzzles with Hodoku:
+
+Download "hodoku.jar" from http://hodoku.sourceforge.net and
+place it in the same folder as the python scripts.
+
+Generate easy difficulty sudoku puzzles in a file called "Easy.txt"
+in the currecnt directory. Press Ctrl-C when you want to stop.
+java -jar hodoku.jar /s /sl 0
+
+Generate medium difficulty sudoku puzzles in a file called "Medium.txt"
+in the currecnt directory. Press Ctrl-C when you want to stop.
+java -jar hodoku.jar /s /sl 1
+
+Go to (http://hodoku.sourceforge.net/en/docs_ref.php#command_line)
+for more info on Hodoku's command line arguements.
+
+
+
+Convert puzzles to OpenSudoku format:
+
+Convert "Easy.txt" to "Easy.opensudoku"
+ (on linux)  ./easy-hodoku-to-opensudoku.py 
+(on windows)  python3 easy-hodoku-to-opensudoku.py 
+
+Convert "Medium.txt" to "Medium.opensudoku"
+ (on linux)  ./medium-hodoku-to-opensudoku.py
+(on windows)  python3 easy-hodoku-to-opensudoku.py 
+
+Then open OpenSudoku and use the Import feature to import the generated puzzles into
+the app.
+
+
+It will be relatively simple to edit the scripts to change to hard or very hard puzzles.
+It should be fairly basic to combine all this in to one master script, but this already 
+does what I want it to do, so I may not work on it further.
